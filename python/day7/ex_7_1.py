@@ -1,6 +1,6 @@
 from sys import maxsize
 
-with open("files/dane_7.txt", "r") as f:
+with open("dane_7.txt", "r") as f:
    lines = f.readline()
 
 
