@@ -5,12 +5,9 @@ with open("files/dane_7.txt", "r") as f:
    lines = f.readline()
 
 
-data = [int(num) for num in lines.split(",")]
-tab = data[:5]
+data = [int(num) for num in lines.split(",")] 
 
-print(tab) # [1101, 1, 29, 67, 1102] 1 do 1102
-
-def calc_cost(tab, currentShift = 0, minValue = min(tab), maxValue = max(tab)):
+def calc_cost(tab, currentShift = 0, minValue = min(data), maxValue = max(data)):
 	min_sum = maxsize
 	for i in range(minValue, maxValue, 1):
 		sum = 0

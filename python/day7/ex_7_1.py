@@ -7,8 +7,6 @@ with open("files/dane_7.txt", "r") as f:
 data = [int(num) for num in lines.split(",")]
 min_sum = maxsize
 
-
-
 for i in range(min(data), max(data)):
 	sum = 0
 	minValue = min(data) + i
